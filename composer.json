@@ -1,0 +1,20 @@
+{
+    "name": "hcgrzh/validation",
+    "description": "Various verification rules",
+    "type": "library",
+	"license": "MIT",
+    "require": {
+        "php": ">=7.2"
+    },
+    "authors": [
+        {
+            "name": "hcgrzh",
+            "email": "hc_179zy@163.com"
+        }
+    ],
+	"autoload": {
+		"psr-4": {
+			"hcgrzh\\validation\\": "src"
+		}
+	}
+}
