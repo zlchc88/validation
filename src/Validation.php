@@ -67,7 +67,7 @@ class Validation{
 	}
 	//手机号码
 	public static function isMobile($value):bool{
-		$rule='/^1[3|4|5|7|8|9][0-9]\d{8}';
+		$rule='/^1[3|4|5|7|8|9][0-9]\d{8}$/';
 		return preg_match($rule,$value)===1;
 	}
 	//邮箱
