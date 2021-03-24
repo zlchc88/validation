@@ -45,6 +45,11 @@ class Validation{
 		$rule='/^[\x{4e00}-\x{9fa5}]+$/u';
 		return preg_match($rule,$value)===1;
 	}
+    //匹配中文英文数字
+	public static function isChineseEnslishNumber($value):bool{
+		$rule='/^[0-9a-zA-Z\x{4e00}-\x{9fa5}]+$/iu';
+		return preg_match($rule,$value)===1;
+	}
 	//匹配身份证
 	public static function isIdCard($value):bool{
 		$rule='/^(\d{18,18}|\d{15,15}|\d{17,17}x)$/';
